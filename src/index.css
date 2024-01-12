@@ -1,0 +1,92 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+  list-style-type: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+.ContactoHeader{
+  background-color: #a5cdf5;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.NavBar{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #9ac7f5;
+    border-bottom: 2px solid #9ac7f5;
+    /* padding-top: 25px;
+    padding-bottom: 25px; */
+}
+
+.NavBarLinks{
+  text-decoration: none;
+  color: black;
+  transition: all 0.1s;
+  transition-timing-function: ease-out;
+}
+
+.NavBarLinks:Hover{
+  color: #9ac7f5;
+}
+
+.logo{
+  width: 200px;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.BotonCart{
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  margin-right: 30px;
+  background-color: #9ac7f5;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  margin-top: 13px;
+}
+
+.BotonCart:hover{
+  background-color: rgb(0, 0, 0);
+}
+
+.carritotxt{
+  margin-left: 5px;
+}
+
+.numero{
+  color: white;
+  background-color:  #000000;
+  border-radius: 20px;
+  padding: 1px;
+  margin-left: 5px;
+  position: relative;
+  bottom: 40px;
+  left: 100px;
+  padding: 3px;
+}
+
+
+.banner{
+  width: 100%;
+}
+
+.alerta{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
