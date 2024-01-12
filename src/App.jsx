@@ -6,7 +6,7 @@ import './index.css'
 const App = () => {
   return(
     <div>
-      <ItemListContainer mensaje={"Bienvenido"} /> 
+      <ItemListContainer mensaje={"Bienvenido Usuario"} /> 
       <Header />
       <Banner />
       <ItemListContainer mensaje={"SITIO EN PROCESO"} /> 
