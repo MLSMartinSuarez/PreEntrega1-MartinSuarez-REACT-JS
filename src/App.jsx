@@ -8,14 +8,14 @@ const App = () => {
   return(
     <>
     <header>
-      <ItemListContainer/> 
+      
       <Header />
     </header> 
     <main>
       <Banner />
       <Productos />
     </main>
-      <ItemListContainer/> 
+      <ItemListContainer />
     </>
   )
 }

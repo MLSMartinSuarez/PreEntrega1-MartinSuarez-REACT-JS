@@ -1,7 +1,15 @@
-const ItemList = () => {
+import { useState } from "react";
+import Item from "./Item";
+import products from "./productos.json";
+
+const ItemList = ({items}) => {
+
+    // const [products , setProducts] = useState(allProducts);
+
     return(
         <>
-        <h1>item list</h1>
+            {items.map ( item => 
+                (<Item key = {item.id} item = {item}/>))} 
         </>
     )
 }

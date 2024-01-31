@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import Products from "./productos.json";
+import products from "./productos.json";
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
 
@@ -8,13 +9,13 @@ const ItemListContainer = () => {
     useEffect( () => {
         const promesa = new Promise (resolve => {
             setTimeout ( () => {
-                resolve(Products);
+                resolve(products);
             }, 2000);
         })
 
         promesa.then(data => {
             setItems(data);
-            console.log(data);
+            // console.log(data);
         })
     }, []);
 
@@ -23,7 +24,9 @@ const ItemListContainer = () => {
 
     return(
         <>
-            <h1>item list container</h1>
+        <div className="cardPos">
+            <ItemList items={items}/>
+        </div>
         </>
     )
 }
