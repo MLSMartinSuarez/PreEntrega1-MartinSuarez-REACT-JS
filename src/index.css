@@ -7,7 +7,7 @@
 }
 
 
-
+/***********************    HEADER     *************************/
 .ContactoHeader{
   background-color: #a5cdf5;
   text-align: center;
@@ -22,8 +22,6 @@
     align-items: center;
     border-top: 2px solid #9ac7f5;
     border-bottom: 2px solid #9ac7f5;
-    /* padding-top: 25px;
-    padding-bottom: 25px; */
 }
 
 .NavBarLinks{
@@ -48,7 +46,6 @@
 .BotonCart{
   display: flex;
   padding: 10px 20px 10px 20px;
-  margin-right: 30px;
   background-color: #9ac7f5;
   border-radius: 20px;
   text-decoration: none;
@@ -56,6 +53,7 @@
   transition: all 0.5s;
   transition-timing-function: ease-out;
   margin-top: 13px;
+  
 }
 
 .BotonCart:hover{
@@ -78,6 +76,8 @@
   padding: 3px;
 }
 
+/***********************    MAIN     *************************/
+
 
 .banner{
   width: 100%;
@@ -89,4 +89,39 @@
   padding: 20px;
   text-align: center;
 }
+
+.titulo{
+  text-align: center;
+  padding: 30px;
+
+}
+
+.cardPos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.productTxt{
+  color:red;
+  padding: 10px;
+}
+
+.productPrice{
+  color: blue;
+  
+}
+
+.productImg{
+  width: 200px;
+  border: 2px solid black;
+}
+
+/***********************    FOOTER     *************************/
 

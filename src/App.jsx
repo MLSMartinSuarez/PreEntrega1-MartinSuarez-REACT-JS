@@ -1,16 +1,22 @@
 import Banner from './components/Banner'
 import Header from './components/Header'
 import ItemListContainer from './components/ItemListContainer'
+import Productos from './components/Productos'
 import './index.css'
 
 const App = () => {
   return(
-    <div>
-      <ItemListContainer mensaje={"Bienvenido Usuario"} /> 
+    <>
+    <header>
+      <ItemListContainer/> 
       <Header />
+    </header> 
+    <main>
       <Banner />
-      <ItemListContainer mensaje={"SITIO EN PROCESO"} /> 
-    </div>
+      <Productos />
+    </main>
+      <ItemListContainer/> 
+    </>
   )
 }
 
