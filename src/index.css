@@ -22,11 +22,12 @@
     align-items: center;
     border-top: 2px solid #9ac7f5;
     border-bottom: 2px solid #9ac7f5;
+    background-color: black;
 }
 
 .NavBarLinks{
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   transition: all 0.1s;
   transition-timing-function: ease-out;
 }
@@ -91,8 +92,10 @@
 }
 
 .titulo{
+  background-color: black;
   text-align: center;
   padding: 30px;
+  color: white;
 
 }
 
@@ -106,21 +109,26 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  
 }
 
 .productTxt{
-  color:red;
+  color:rgb(0, 0, 0);
   padding: 10px;
+  font-size: larger;
 }
 
 .productPrice{
-  color: blue;
+  color: rgb(0, 0, 0);
+  font-size: xx-large;
   
 }
 
 .productImg{
-  width: 200px;
-  border: 2px solid black;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid rgb(0, 0, 0);
 }
 
 /***********************    FOOTER     *************************/

@@ -15,7 +15,7 @@ const ItemListContainer = () => {
 
         promesa.then(data => {
             setItems(data);
-            // console.log(data);
+            console.log(data);
         })
     }, []);
 
@@ -23,12 +23,12 @@ const ItemListContainer = () => {
 
 
     return(
-        <>
+        
         <div className="cardPos">
             <ItemList items={items}/>
         </div>
-        </>
+        
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
