@@ -22,12 +22,16 @@
     align-items: center;
     border-top: 2px solid #9ac7f5;
     border-bottom: 2px solid #9ac7f5;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .NavBarLinks{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: all 0.1s;
   transition-timing-function: ease-out;
 }
@@ -50,15 +54,17 @@
   background-color: #9ac7f5;
   border-radius: 20px;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   transition: all 0.5s;
   transition-timing-function: ease-out;
   margin-top: 13px;
+  cursor: pointer;
   
 }
 
 .BotonCart:hover{
   background-color: rgb(0, 0, 0);
+  color: white;
 }
 
 .carritotxt{
@@ -66,7 +72,7 @@
 }
 
 .numero{
-  color: white;
+  color: rgb(255, 255, 255);
   background-color:  #000000;
   border-radius: 20px;
   padding: 1px;
@@ -84,32 +90,35 @@
   width: 100%;
 }
 
-.alerta{
-  background-color: black;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
 .titulo{
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   text-align: center;
-  padding: 30px;
-  color: white;
-
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  border-top: 2px solid #9ac7f5;
+  border-bottom: 2px solid #9ac7f5;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
+
+/*                   *******************   CARDS    **********************************   */
 
 .cardPos{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    padding-top: 20px;
+    gap: 66px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
 }
 
 .card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  
+    background-color: rgb(255, 255, 255);
 }
 
 .productTxt{
@@ -121,15 +130,120 @@
 .productPrice{
   color: rgb(0, 0, 0);
   font-size: xx-large;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
   
 }
 
 .productImg{
-  width: 250px;
+  width: 260px;
   height: 250px;
   object-fit: cover;
-  border: 3px solid rgb(0, 0, 0);
+  border-bottom: 1px solid black;
 }
 
+.productInfo{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.botonCard{
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 13px;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.botonCard:hover{
+  background-color: #9ac7f5;
+  color: black;
+}
+
+.cardBorder{
+  border: 1px solid rgb(0, 0, 0);
+  transition: all 0.3s;
+  transition-timing-function: ease-out;
+  box-shadow: 11px 11px 8px 0px #474747;
+  margin-bottom: 20px;
+}
+
+.cardBorder:hover{
+  box-shadow: none;
+}
+
+/* ***********************    DETALLE DEL PRODUCTO  ************************/
+
+.cardPos2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding-top: 20px;
+  gap: 66px;
+  background-color: rgb(122, 121, 121);
+  align-items: center;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+}
+
+.detailInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 30px;
+  
+}
+
+.detailImg{
+  color: white;
+  width: 400px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+.detailProduct{
+  color: rgb(253, 250, 250);
+}
+
+.detailDescription{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: larger;
+}
+
+.detailPrice{
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
+}
+
+/* *************************** LINKS ***************************/
+
+
+.sinDecoracion{
+  text-decoration: none;
+}
+
+
 /***********************    FOOTER     *************************/
+
+
+.footer{
+  background-color: white;
+  color: black;
+  padding: 30px;
+  text-align: center;
+}
 
