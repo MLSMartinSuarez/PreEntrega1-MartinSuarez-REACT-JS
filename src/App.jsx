@@ -6,6 +6,8 @@ import Productos from './components/Productos'
 import './index.css'
 import Footer from './components/Footer'
 import ItemDetailContainer from './components/ItemDetailContainer'
+import Error404 from './components/Error404'
+import Cart from './components/Cart'
 
 const App = () => {
   return(
@@ -18,6 +20,8 @@ const App = () => {
             <Route path={'/'} element={<ItemListContainer />} />
             <Route path={'/category/:id'} element={<ItemListContainer />} />
             <Route path={'/item/:id'} element={<ItemDetailContainer />} />
+            <Route path={'/cart'} element={<Cart />} />
+            <Route path={'*'} element={<Error404 />} />
           </Routes>
         </main>
         <footer>

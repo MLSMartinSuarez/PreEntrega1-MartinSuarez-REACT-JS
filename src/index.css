@@ -169,7 +169,7 @@ body{
   align-items: center;
   cursor: pointer;
   position: relative;
-
+  text-decoration: none;
 }
 
 .botonCard:hover{
