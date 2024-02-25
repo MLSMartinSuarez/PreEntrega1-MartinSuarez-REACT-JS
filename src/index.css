@@ -8,8 +8,15 @@
 
 
 /***********************    HEADER     *************************/
+
+body{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .ContactoHeader{
   background-color: #a5cdf5;
+  border-radius: 20px;
   text-align: center;
   color: white;
   padding: 10px;
@@ -83,7 +90,7 @@
   padding: 3px;
 }
 
-/***********************    MAIN     *************************/
+/* / ***********************    MAIN     *************************/ 
 
 
 .banner{
@@ -227,6 +234,10 @@
 .detailPrice{
   color: rgb(255, 255, 255);
   font-size: xx-large;
+}
+
+.AddCartButton{
+  display: flex;
 }
 
 /* *************************** LINKS ***************************/
