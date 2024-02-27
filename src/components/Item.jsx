@@ -15,9 +15,12 @@ const Item = (item) => {
                         <img className="productImg" src={item.image} alt={item.product} />
                             <div className="productInfo">
                                 <p className="productTxt">{item.product}</p>
-                                <p className="productPrice">{item.price}</p>
+                                {/* <p className="productDesc">{item.description}</p> */}
                             </div> 
-                        <p className="botonCard">Añadir al carrito</p>
+                            <p className="productPrice">{item.price}</p>
+                        <div className="botonCardPos">
+                            <button className="botonCard">Añadir al carrito</button>
+                        </div>
                     </div>
                 </section>
             

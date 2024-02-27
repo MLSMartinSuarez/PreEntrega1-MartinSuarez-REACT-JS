@@ -12,10 +12,12 @@ const ItemDetail = ({item}) => {
                     <h2 className="detailProduct">{item.product}</h2>
                     <p className="detailDescription">{item.description}</p>
                     <p className="detailPrice">{item.price}</p>
-                    <ItemCount stock={item.stock}/>
+                    
                 </div>
             </div>
         </div> 
+
+
        
        
 </>
