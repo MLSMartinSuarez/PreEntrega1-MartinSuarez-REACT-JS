@@ -10,20 +10,27 @@
 /***********************    HEADER     *************************/
 
 body{
-  margin-left: 30px;
-  margin-right: 30px;
-  background-color: #000000;
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230630/pngtree-3d-render-of-majestic-clouds-in-the-sky-image_3694765.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.911);
 }
 
 .ContactoHeader{
-  background-color: #ffffff;
+  background-color: #ffffff61;
   border-radius: 20px;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 10px;
   border: 3px solid rgb(0, 0, 0);
   font-weight: bold;
   margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .NavBar{
@@ -32,11 +39,11 @@ body{
     justify-content: space-around;
     align-items: center;
     border: 3px solid #ffffff;;
-    background-color: #000000;
+    background-color: #0000006a;
     margin-bottom: 5px;
     border-radius: 50px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
     font-weight: bold;
 }
 
@@ -100,21 +107,22 @@ body{
 
 .banner{
   border-radius: 20px;
-  width: 100%;
+  width: 98%;
+  margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
   border: 2px solid white;
 }
 
 .titulo{
-  background-color: #000000;
+  background-color: #0000006a;
   text-align: center;
   padding: 20px;
   color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-bottom: 40px;
 }
 
@@ -126,7 +134,7 @@ body{
     justify-items: center;
     padding-top: 20px;
     gap: 66px;
-    background-color: #000000;
+    background-color: #0000006a;
     border-radius: 50px;
     margin-left: 5px;
     margin-right: 5px;
@@ -183,33 +191,23 @@ body{
 }
 
 .botonCard{
-  /* display: flex;
-  padding: 10px 20px 10px 20px;
-  background-color: rgb(0, 0, 0);
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  margin-top: 13px;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  /* position: relative; */
-  /* text-decoration: none; */
-  padding: 0px 75px 0px 75px;
-  /* margin-bottom: 10px; */
+  padding: 0px 70px 0px 70px;
   border-radius: 20px;
-
+  transition: all 0.2s;
+  transition-timing-function: ease-out;
+  
 }
 
 .botonCard:hover{
-  background-color: #9ac7f5;
-  color: black;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
 }
 
 .cardBorder{
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
   transition: all 0.3s;
   transition-timing-function: ease-out;
-  box-shadow: 11px 11px 8px 0px #474747;
+  box-shadow: 11px 11px 8px 0px #9c9b9b;
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -226,12 +224,13 @@ body{
   justify-items: center;
   padding-top: 20px;
   gap: 66px;
-  background-color: rgb(122, 121, 121);
+  background: rgb(43, 43, 43);
+  background: linear-gradient(90deg, rgba(43, 43, 43, 0.411) 0%, rgba(0, 0, 0, 0.615) 81%, rgba(255, 255, 255, 0) 100%); 
   align-items: center;
-  border-radius: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border: 1px solid black;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  /* border: 1px solid black; */
 }
 
 .detailInfo{
@@ -246,8 +245,9 @@ body{
 .detailImg{
   color: white;
   width: 400px;
-  border-radius: 50px;
-  border: 2px solid black;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid black;
 }
 
 .detailProduct{
@@ -281,10 +281,11 @@ body{
 
 
 .footer{
-  background-color: white;
-  color: black;
+  background-color: rgba(255, 255, 255, 0.209);
+  color: rgb(255, 255, 255);
   padding: 30px;
   text-align: center;
+  margin-top: 30px;
 }
 
 
