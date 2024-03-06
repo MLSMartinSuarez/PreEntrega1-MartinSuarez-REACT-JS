@@ -8,26 +8,30 @@ import Footer from './components/Footer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import Error404 from './components/Error404'
 import Cart from './components/Cart'
+import CartContextProvider from './components/Context/CartContext'
 
 const App = () => {
   return(
-    <BrowserRouter>
-        <header>
-          <Header />
-        </header> 
-        <main>
-          <Routes>
-            <Route path={'/'} element={<ItemListContainer />} />
-            <Route path={'/category/:id'} element={<ItemListContainer />} />
-            <Route path={'/item/:id'} element={<ItemDetailContainer />} />
-            <Route path={'/cart'} element={<Cart />} />
-            <Route path={'*'} element={<Error404 />} />
-          </Routes>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-    </BrowserRouter>
+    <CartContextProvider>
+      <BrowserRouter>
+          <header>
+              <Header />
+          </header> 
+          <main>
+            <Routes>
+              <Route path={'/'} element={<ItemListContainer />} />
+              <Route path={'/category/:id'} element={<ItemListContainer />} />
+              <Route path={'/item/:id'} element={<ItemDetailContainer />} />
+              <Route path={'/cart'} element={<Cart />} />
+              <Route path={'*'} element={<Error404 />} />
+            </Routes>
+          </main>
+          <footer>
+              <Footer />
+          </footer>
+        
+      </BrowserRouter>
+    </CartContextProvider>
   )
 }
 

@@ -1,37 +1,37 @@
 [
-    {"id":1,  "stock":20, "product":"Sabana Roja", "description":"Las sabanas de plumas de color roja, excelente opcion de compra para decoraciones coloridas y con mucha energia" , "price": "$ 15.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_903103-MLA49102234553_022022-O.webp" , "category":"cama"},
+    {"id":1,  "stock":20, "product":"Sabana Roja", "description":"Las sabanas de plumas de color roja, excelente opcion de compra para decoraciones coloridas y con mucha energia" , "price": "15000" , "image":"https://http2.mlstatic.com/D_NQ_NP_903103-MLA49102234553_022022-O.webp" , "category":"cama"},
 
 
-    {"id":2,  "stock":20, "product":"Sabana Azul", "description":"Las sabanas de plumas de color azul, excelente opcion de compra para decoraciones coloridas y con mucha energia" , "price": "$ 18.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_952313-MLA73800366440_012024-O.webp" ,"category":"cama"},
+    {"id":2,  "stock":20, "product":"Sabana Azul", "description":"Las sabanas de plumas de color azul, excelente opcion de compra para decoraciones coloridas y con mucha energia" , "price": "18000" , "image":"https://http2.mlstatic.com/D_NQ_NP_952313-MLA73800366440_012024-O.webp" ,"category":"cama"},
 
     
-    {"id":3,  "stock":20, "product":"Sabana Blanca", "description":"Las sabanas de plumas de color blanco, ideal para un diseño relajado, ordenado y satisfactorio" , "price": "$ 14.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_710832-MLA54248967359_032023-O.webp" , "category":"cama"},
+    {"id":3,  "stock":20, "product":"Sabana Blanca", "description":"Las sabanas de plumas de color blanco, ideal para un diseño relajado, ordenado y satisfactorio" , "price": "14000" , "image":"https://http2.mlstatic.com/D_NQ_NP_710832-MLA54248967359_032023-O.webp" , "category":"cama"},
 
 
-    {"id":4,  "stock":20, "product":"Mantel Cuadriculado", "description":"El mantel decorativo cuadriculado de colores vivos, ideales para cenas familiares grandes no formales" , "price": "$ 7.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_973791-MLA71410866425_082023-O.webp" ,"category":"deco"},
+    {"id":4,  "stock":20, "product":"Mantel Cuadriculado", "description":"El mantel decorativo cuadriculado de colores vivos, ideales para cenas familiares grandes no formales" , "price": "7000" , "image":"https://http2.mlstatic.com/D_NQ_NP_973791-MLA71410866425_082023-O.webp" ,"category":"deco"},
 
 
-    {"id":5,  "stock":20, "product":"Mantel Blanco", "description":"El mantel decorativo blanco es una sencilla forma de darle formalidad a una mesa, acompañado con un buen centro de mesa" , "price": "$ 7.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_971789-MLA50458684450_062022-O.webp" ,"category":"deco"},
+    {"id":5,  "stock":20, "product":"Mantel Blanco", "description":"El mantel decorativo blanco es una sencilla forma de darle formalidad a una mesa, acompañado con un buen centro de mesa" , "price": "7000" , "image":"https://http2.mlstatic.com/D_NQ_NP_971789-MLA50458684450_062022-O.webp" ,"category":"deco"},
 
 
-    {"id":6,  "stock":20, "product":"Mantel Rojo", "description":"El mantel decorativo rojo, ideales para cenas familiares grandes no formales" , "price": "$ 7.500" , "image":"https://http2.mlstatic.com/D_NQ_NP_919579-MLA25855816294_082017-O.webp" ,"category":"deco"},
+    {"id":6,  "stock":20, "product":"Mantel Rojo", "description":"El mantel decorativo rojo, ideales para cenas familiares grandes no formales" , "price": "7500" , "image":"https://http2.mlstatic.com/D_NQ_NP_919579-MLA25855816294_082017-O.webp" ,"category":"deco"},
 
 
-    {"id":7,  "stock":20, "product":"Toalla de mano Negra", "description":"Una toalla de mano de color negra y de algodon, larga duracion y excelente color para evitar cualquier tipo de mancha" , "price": "$ 5.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_785068-MLA50608296479_072022-O.webp" ,"category":"baño"},
+    {"id":7,  "stock":20, "product":"Toalla de mano Negra", "description":"Una toalla de mano de color negra y de algodon, larga duracion y excelente color para evitar cualquier tipo de mancha" , "price": "5.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_785068-MLA50608296479_072022-O.webp" ,"category":"baño"},
 
 
-    {"id":8,  "stock":20, "product":"Toalla de mano Blanca", "description":"Una toalla de mano blanca de algodon que combina facilmente con cualquier baño" , "price": "$ 5.500" , "image":"https://http2.mlstatic.com/D_NQ_NP_715769-MLA72359816580_102023-O.webp" ,"category":"baño"},
+    {"id":8,  "stock":20, "product":"Toalla de mano Blanca", "description":"Una toalla de mano blanca de algodon que combina facilmente con cualquier baño" , "price": "5500" , "image":"https://http2.mlstatic.com/D_NQ_NP_715769-MLA72359816580_102023-O.webp" ,"category":"baño"},
 
 
-    {"id":9,  "stock":20, "product":"Toalla de mano Azul", "description":"Una toalla de mano azul de algodon, un color mas atrevido y energetico, fuera de la comun" , "price": "$ 5.500" , "image":"https://http2.mlstatic.com/D_NQ_NP_863418-MLA47977735423_102021-O.webp" ,"category":"baño"},
+    {"id":9,  "stock":20, "product":"Toalla de mano Azul", "description":"Una toalla de mano azul de algodon, un color mas atrevido y energetico, fuera de la comun" , "price": "5500" , "image":"https://http2.mlstatic.com/D_NQ_NP_863418-MLA47977735423_102021-O.webp" ,"category":"baño"},
 
 
-    {"id":10, "stock":20, "product":"Repasador Blanco", "description":"Un repasador de cocina Blanco aunque puede mancharse facil combina facilmente con la estetica de cualquier cocina" , "price": "$ 3.500" , 
+    {"id":10, "stock":20, "product":"Repasador Blanco", "description":"Un repasador de cocina Blanco aunque puede mancharse facil combina facilmente con la estetica de cualquier cocina" , "price": "3500" , 
     "image":"https://http2.mlstatic.com/D_NQ_NP_991453-MLA72295335010_102023-O.webp" ,"category":"cocina"},
 
 
-    {"id":11, "stock":20, "product":"Repasador Rojo", "description":"Un repasador de cocina rojo le da un toque de vigorocidad a la cocina diaria" , "price": "$ 3.500" , "image":"https://http2.mlstatic.com/D_NQ_NP_707033-MLA73196765922_122023-O.webp" ,"category":"cocina"},
+    {"id":11, "stock":20, "product":"Repasador Rojo", "description":"Un repasador de cocina rojo le da un toque de vigorocidad a la cocina diaria" , "price": "3500" , "image":"https://http2.mlstatic.com/D_NQ_NP_707033-MLA73196765922_122023-O.webp" ,"category":"cocina"},
 
 
-    {"id":12, "stock":20, "product":"Repasador Amarillo", "description":"Un repasador de cocina amarillo le da un toque de vigorocidad a la cocina diaria" , "price": "$ 4.000" , "image":"https://http2.mlstatic.com/D_NQ_NP_830261-MLA74037502435_012024-O.webp" ,"category":"cocina"}
+    {"id":12, "stock":20, "product":"Repasador Amarillo", "description":"Un repasador de cocina amarillo le da un toque de vigorocidad a la cocina diaria" , "price": "4000" , "image":"https://http2.mlstatic.com/D_NQ_NP_830261-MLA74037502435_012024-O.webp" ,"category":"cocina"}
 ]

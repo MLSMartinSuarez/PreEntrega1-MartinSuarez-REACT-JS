@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import stock from "./productos.json";
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({stock, onAdd}) => {
 
     const [counter, setCounter] = useState(1);
 
@@ -22,10 +22,11 @@ const ItemCount = ({stock}) => {
         }
     }
 
-    const onAdd = () => {
+    const toCart = () => {
         if (counter <= itemStock) {
             setItemStock(itemStock - counter);
             setCounter(1);
+            onAdd(counter);
             setCart(false);
             alert("agregaste " + counter + " productos al Carro!");
             console.log("Quedan " + (itemStock - counter) + " de este producto");
@@ -38,7 +39,7 @@ const ItemCount = ({stock}) => {
             <button className="botonCard" onClick={increase}>+</button>
             <button className="botonCard">{counter}</button>
             <button className="botonCard" onClick={decrease}>-</button> 
-           {cart ? <button className="botonCard" onClick={onAdd}>Agregar al carrito</button> : <Link to={'/cart'}> <button className="botonCard"> Terminar Compra </button> </Link>} 
+           {cart ? <button className="botonCard" onClick={toCart}>Agregar al carrito</button> : <Link to={'/cart'}> <button className="botonCard"> Terminar Compra </button> </Link>} 
          </div>
         </>
     )

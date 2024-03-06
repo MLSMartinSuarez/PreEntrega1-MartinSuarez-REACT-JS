@@ -1,14 +1,23 @@
+import { useContext } from "react";
+import { CartContext } from "./Context/CartContext";
+import { Link } from "react-router-dom";
+
 const CartWidget = () => {
-    return(
 
-        <div>
-            <a className="BotonCart flip-2-hor-top-1" href="">
-                <i className="bi bi-cart-check-fill"></i>
-                <p className="carritotxt">Carrito </p>
-            </a>
-                <span className="numero">2</span>   
-        </div>
+    const {allProductsQuantity} = useContext(CartContext);
 
+    return (
+        <>
+
+        {allProductsQuantity() > 0 ?
+
+        <Link to={'/cart'} className="link"> <button className="BotonCart"><p className="carritotx">Carrito</p></button><span className="numero">{allProductsQuantity()}</span></Link>
+
+        :  
+
+        <Link to={'/cart'}> <button className="BotonCart"><p className="carritotx">Carrito</p></button></Link> }
+
+        </>
     )
 }
 
