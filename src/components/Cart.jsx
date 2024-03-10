@@ -21,11 +21,11 @@ const Cart = () => {
                     </div>
                     <div className="checkout">
                         <p>Precio total : <span>${allProductsPrice()}</span></p>
-                        <button>pagar</button>
+                        <button className="btncheckout" >pagar</button>
                     </div>
                     <div className="volver">
-                        <button>volver al sitio</button>
-                        <button onClick={clearCart}>VACIAR CARRITO</button>
+                        <Link to={'/'}> <button className="btnvolver">volver al sitio</button> </Link>
+                        <button onClick={clearCart} className="btnvolver">VACIAR CARRITO</button>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const Cart = () => {
                             <h3 className="producto">{product.product}</h3>
                             <h4 className="precio">{product.price}</h4>
                             <p className="cantidad"><span>{allProductsQuantity()}</span></p>
-                            <a href="" className="remover" onClick={removeItem}>X</a> 
+                            <a href="" className="remover" onClick={ () => {removeItem(product.id)} }>X</a> 
                             
 
                             </div>
@@ -62,11 +62,11 @@ const Cart = () => {
                     
                     <div className="checkout">
                         <p>Precio total : <span>${allProductsPrice()}</span></p>
-                        <button>pagar</button>
+                        <button className="btncheckout" >pagar</button>
                     </div>
                     <div className="volver">
-                        <button>volver al sitio</button>
-                        <button onClick={clearCart}>VACIAR CARRITO</button>
+                        <Link to={'/'}> <button className="btnvolver">volver al sitio</button> </Link>
+                        <button onClick={clearCart} className="btnvolver">VACIAR CARRITO</button>
                     </div>
                 </div>
             </div>

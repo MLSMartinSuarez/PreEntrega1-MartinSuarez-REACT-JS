@@ -191,7 +191,9 @@ body{
 }
 
 .botonCard{
-  padding: 0px 70px 0px 70px;
+  /* padding: 0px 70px 0px 70px; */
+  padding: 10px;
+  margin-right: 10px;
   border-radius: 20px;
   transition: all 0.2s;
   transition-timing-function: ease-out;
@@ -201,6 +203,7 @@ body{
 .botonCard:hover{
   background-color: #000000;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 .cardBorder{
@@ -348,6 +351,7 @@ body{
   margin-right: 50px;
   border: 1px solid black;
   padding: 10px;
+  cursor: pointer;
 }
 
 .remover:hover{
@@ -358,6 +362,12 @@ body{
   display: flex;
   margin: 30px;
   gap: 20px;
+  align-items: center;
+}
+
+.btncheckout{
+  cursor: pointer;
+  padding: 10px;
 }
 
 .volver{
@@ -366,9 +376,15 @@ body{
   margin: 30px;
 }
 
+.btnvolver{
+  cursor: pointer;
+  padding: 10px;
+}
+
 .emptycart{
   padding: 20px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .totalProductos{

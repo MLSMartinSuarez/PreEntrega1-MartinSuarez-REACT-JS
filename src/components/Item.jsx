@@ -16,7 +16,7 @@ const Item = (item) => {
                             <div className="productInfo">
                                 <p className="productTxt">{item.product}</p>
                             </div> 
-                            <p className="productPrice">{item.price}</p>
+                            <p className="productPrice">$ {item.price}</p>
                         <div className="botonCardPos">
                             <button className="botonCard">Añadir al carrito</button>
                         </div>
