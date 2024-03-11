@@ -4,11 +4,13 @@ import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
 import Banner from "./Banner";
 import Productos from "./Productos";
-import { getFirestore, collection, addDoc, query, getDocs } from "firebase/firestore";
+import { getFirestore, collection, addDoc, query, getDocs, where } from "firebase/firestore";
+import Loading from "./Loading";
 
 const ItemListContainer = () => {
 
     const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true);
     const {id} = useParams();
 
     // useEffect ( () => {
@@ -30,9 +32,10 @@ const ItemListContainer = () => {
 
         const q = id ? query(productsCollectionInFirebase, where ("category", "==", id)) : productsCollectionInFirebase; // si tengo un id filtra sino, todos los productos
 
-        getDocs(q).then(promesaFirebase => { // al ser promesa, capturo con then
-            // setLoading (false);
-            setItems (promesaFirebase.docs.map (products => ( { id:products.id , ...products.data() } ) ) ); // creo un array, y lo mapeo desde firebase
+        getDocs(q).then(promesaFirebaseList => { // al ser promesa, capturo con then
+            setLoading (false);
+            setItems (promesaFirebaseList.docs.map (products => ( { id:products.id , ...products.data() } ) ) ); // creo un array, y lo mapeo desde firebase
+            console.log("conectado al firebase");
         } ) ;
     }, [id] ); // darle parametro id para que filtre en la pagina
 
@@ -50,8 +53,8 @@ const ItemListContainer = () => {
         <div>
             {id ? "" : <Productos/>}
         </div>
-        <div className="cardPos">
-            <ItemList items={items}/>
+        <div>
+            {loading ? <Loading/> : <ItemList items={items}/>}
         </div>
         </>
     )

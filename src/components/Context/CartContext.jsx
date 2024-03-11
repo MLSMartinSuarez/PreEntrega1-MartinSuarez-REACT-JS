@@ -49,7 +49,7 @@ const CartContextProvider = ( { children } ) => {
 
     const allProductsQuantity = () => {
 
-        return cart.reduce( ( accumulator, product ) => accumulator += product.quantity, 0);
+        return cart.reduce((acum, product) => acum += product.quantity, 0);
 
     }
 
@@ -58,6 +58,8 @@ const CartContextProvider = ( { children } ) => {
         return cart.reduce((acum, product) => acum += product.price * product.quantity, 0);
 
     }
+
+    
     
     
 
