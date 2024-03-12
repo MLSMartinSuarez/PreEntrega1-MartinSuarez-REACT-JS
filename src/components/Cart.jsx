@@ -19,12 +19,12 @@ const Cart = () => {
                         <div className="emptycart">
                             <p>NO SE ENCONTRARON PRODUCTOS EN TU CARRITO</p>
                         </div>
-                        <div className="checkout">
+                        <div className="checkout BotonCart">
                             <p>Precio total : <span>${allProductsPrice()}</span></p>
                         </div>
                         <div className="volver">
-                            <Link to={'/'}> <button className="btnvolver">volver al sitio</button> </Link>
-                            <button onClick={clearCart} className="btnvolver">VACIAR CARRITO</button>
+                            <Link to={'/'}> <button className="btnvolver BotonCart">volver al sitio</button> </Link>
+                            <button onClick={clearCart} className="btnvolver BotonCart">VACIAR CARRITO</button>
                         </div>
                     </div>
                 </div>

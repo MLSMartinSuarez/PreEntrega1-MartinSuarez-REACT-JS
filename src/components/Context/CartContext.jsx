@@ -12,7 +12,7 @@ const CartContextProvider = ( { children } ) => {
 
         if (itemValidationInCart ( item.id )) { // si el producto esta en el carrito...
 
-            let positionInCart = cart.findIndex(product => product.id === id); // busco en todos los productos de mi json
+            let positionInCart = cart.findIndex(product => product.id === item.id); // busco en todos los productos de mi json
 
             cart [ positionInCart ].quantity += quantity; // al encontrarlo, le suma a la PROPIEDAS CREADA quantity, porque ya existe en el carrito
 
