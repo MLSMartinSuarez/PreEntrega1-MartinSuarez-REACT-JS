@@ -70,7 +70,7 @@ body{
 .BotonCart{
   display: flex;
   padding: 10px 20px 10px 20px;
-  background-color: #ffffff;
+  background-color: #ffffffc6;
   border-radius: 20px;
   border: 2px solid white;
   text-decoration: none;
@@ -192,7 +192,6 @@ body{
 }
 
 .botonCard{
-  /* padding: 0px 70px 0px 70px; */
   padding: 10px;
   margin-right: 10px;
   border-radius: 20px;
@@ -242,7 +241,6 @@ body{
   align-items: center;
   gap: 80px;
   padding: 30px;
-  
 }
 
 .detailImg{
@@ -312,7 +310,7 @@ body{
 }
 
 .fondo{
-  background: #ffffff;
+  background: #ffffffb9;
   margin: 0px 150px 0px 150px;
   border-radius: 30px;
   
@@ -446,6 +444,14 @@ body{
   margin-top: 50px;
   border: 1px solid black;
   background-color: rgba(0, 0, 0, 0.463);
+}
+
+
+.ojuju {
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 

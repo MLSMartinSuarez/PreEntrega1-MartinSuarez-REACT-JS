@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Checkout = () => {
     const [nombre, setNombre] = useState();
+    const [apellido, setApellido] = useState();
     const [email, setEmail] = useState();
     const [telefono, setTelefono] = useState();
     const [orderId, setOrderId] = useState();
@@ -13,6 +14,10 @@ const Checkout = () => {
     const newOrder = () => {
 
         if (nombre.length === 0) {
+            return false;
+        }
+
+        if (apellido.length === 0) {
             return false;
         }
 
@@ -26,7 +31,7 @@ const Checkout = () => {
 
         // datos del comprador
 
-        const buyer = { name: nombre, email: email, phone: telefono };
+        const buyer = { name: nombre, lastname: apellido, email: email, phone: telefono };
 
         const products = cart.map(product => ({ id: product.idx, product: product.product, price: product.price }));
 
@@ -76,6 +81,10 @@ const Checkout = () => {
                         <input type="text" onInput={(e) => { setNombre(e.target.value) }} />
                     </div>
                     <div className="input">
+                        <label ><b>Apellido</b></label>
+                        <input type="text" onInput={(e) => { setApellido(e.target.value) }} />
+                    </div>
+                    <div className="input">
                         <label ><b>Email</b></label>
                         <input type="text" onInput={(e) => { setEmail(e.target.value) }} />
                     </div>
@@ -83,13 +92,13 @@ const Checkout = () => {
                         <label ><b>Telefono</b></label>
                         <input type="text" onInput={(e) => { setTelefono(e.target.value) }} />
                     </div>
-                    <button type="button" onClick={newOrder}>Generar Orden de Compra</button>
+                    <button type="button" className="BotonCart" onClick={newOrder}>Generar Orden de Compra</button>
                 </form>
             </div>
             <div className="buyComplete">
                     {orderId ? 
                     <div className="">
-                        <h1>Gracias por Elegir Blanco Carmiel</h1>
+                        <h1>¡Gracias por Elegir Blanco Carmiel {nombre}!</h1>
                         <h2>Tu ID de Compra es: {orderId}</h2>
                     </div> : ""}
             </div>

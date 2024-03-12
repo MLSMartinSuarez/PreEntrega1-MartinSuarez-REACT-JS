@@ -51,12 +51,12 @@ const Cart = () => {
                             </div>)}
                     </div>
                     <div className="checkout">
-                        <p>Precio total : <span>${allProductsPrice()}</span></p>
-                        <Link to={"/checkout"}> <button className="btncheckout" >pagar</button></Link>
+                        <p>Precio total : <span><b>${allProductsPrice()}</b></span></p>
+                        <Link to={"/checkout"}> <button className="btncheckout BotonCart" >Checkout</button></Link>
                     </div>
                     <div className="volver">
-                        <Link to={'/'}> <button className="btnvolver">volver al sitio</button> </Link>
-                        <button onClick={clearCart} className="btnvolver">VACIAR CARRITO</button>
+                        <Link to={'/'}> <button className="btnvolver BotonCart">Volver al Sitio</button> </Link>
+                        <button onClick={clearCart} className="btnvolver BotonCart">Vaciar Carrito</button>
                     </div>
                 </div>
             </div>
