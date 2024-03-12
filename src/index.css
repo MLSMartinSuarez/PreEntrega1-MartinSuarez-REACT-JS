@@ -19,8 +19,8 @@ body{
   background:
        
         linear-gradient(
-          rgba(0, 0, 0, 0.3), 
-          rgba(0, 0, 0, 0.3)
+          rgba(0, 0, 0, 0.2), 
+          rgba(0, 0, 0, 0.2)
         ),
         
         url("https://wallpaperswide.com/download/clouds_12-wallpaper-3200x2400.jpg");
@@ -43,6 +43,7 @@ body{
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
+  animation: Aparecer 4s;
 }
 
 .socials{
@@ -72,7 +73,7 @@ body{
 
 .NavBarLinks{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(177, 175, 175);
   transition: all 0.1s;
   transition-timing-function: ease-out;
 }
@@ -81,12 +82,38 @@ body{
   color: white
 }
 
-.logo{
+.logoDsp{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  animation: Aparecer 2s;
+}
+
+@keyframes Aparecer {
+  0%{
+    filter: opacity(0%);
+}
+100%{
+    filter: opacity(100%);
+}
+}
+
+.logoCarmiel{
   width: 250px;
   display: block;
   margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-left: 100px;
+}
+
+.logoBienvenidos{
+  width: 400px;
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 50px;
 }
 
 .BotonCart{
