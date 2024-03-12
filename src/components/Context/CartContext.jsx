@@ -18,6 +18,8 @@ const CartContextProvider = ( { children } ) => {
 
             setCart ( [...cart] ); // spread para pushear al carrito la nueva quantity (VALOR)
 
+            console.log("hecho");
+
         } else { // si no esta en el carrito, lo agrego
 
             cart.push ( { ...item, quantity:quantity } ) // el producto seleccionado con todas sus id se le agrega a la PROPIEDAD quantity
@@ -30,13 +32,13 @@ const CartContextProvider = ( { children } ) => {
    
     const itemValidationInCart = (id) => {
 
-        return cart.some(product => product.id === id); // me devuelve TRUE si encuentra el producto en el json
+        return cart.some(product => product.id === id); 
 
     }
 
     const clearCart = () => {
 
-        setCart([]); // al ponerlo en un boton, me vuelve al estado original del use state, vacio
+        setCart([]); 
 
     }
 

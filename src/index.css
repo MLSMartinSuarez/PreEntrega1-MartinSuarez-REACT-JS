@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+a{
+  display: inline
+}
+
 
 /***********************    HEADER     *************************/
 
@@ -18,7 +22,7 @@ body{
   width: 100%;
   background-position: center;
   background-attachment: fixed;
-  background-color: rgba(0, 0, 0, 0.911);
+  background-color: rgba(0, 0, 0, 0.367);
 }
 
 .ContactoHeader{
@@ -138,11 +142,11 @@ body{
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     padding-top: 20px;
-    gap: 66px;
+    /* gap: 66px; */
     background-color: #0000006a;
     border-radius: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
     margin-top: 40px;
     border: 2px solid rgb(0, 0, 0);
 }
