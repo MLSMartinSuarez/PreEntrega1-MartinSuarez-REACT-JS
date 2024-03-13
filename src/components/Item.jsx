@@ -15,8 +15,10 @@ const Item = (item) => {
                         <img className="productImg" src={item.image} alt={item.product} />
                             <div className="productInfo">
                                 <p className="productTxt">{item.product}</p>
-                            </div> 
-                            <p className="productPrice">$ {item.price}</p>
+                            </div>
+                            <div>
+                                <p className="productPrice">$ {item.price}</p>
+                            </div>
                         <div className="botonCardPos">
                             <button className="botonCard">Añadir al carrito</button>
                         </div>

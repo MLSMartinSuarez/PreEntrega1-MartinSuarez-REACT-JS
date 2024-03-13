@@ -32,7 +32,6 @@ body{
   background-position: center;
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.367);
-  
 }
 
 .ContactoHeader{
@@ -188,7 +187,6 @@ body{
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     padding-top: 20px;
-    /* gap: 66px; */
     background-color: #0000006a;
     border-radius: 50px;
     margin-left: 200px;
@@ -196,6 +194,11 @@ body{
     margin-top: 40px;
     border: 2px solid rgb(0, 0, 0);
 }
+
+.card{
+  background-color: rgba(0, 0, 0, 0.444);
+}
+
 
 .productTxt{
   color:rgb(255, 255, 255);
@@ -222,11 +225,11 @@ body{
 }
 
 .productImg{
-  width: 260px;
+  width: 230px;
   height: 250px;
   object-fit: cover;
-  border-bottom: 1px solid black;
-  border-radius: 20px;
+  border-radius: 200px;
+  padding: 10px;
 }
 
 .productInfo{
@@ -238,15 +241,15 @@ body{
 .botonCardPos{
   display: flex;
   justify-content: center;
-  
 }
 
 .botonCard{
   padding: 10px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   border-radius: 20px;
   transition: all 0.2s;
   transition-timing-function: ease-out;
+  margin-bottom: 10px;
   
 }
 
@@ -257,16 +260,16 @@ body{
 }
 
 .cardBorder{
-  border: 1px solid rgb(0, 0, 0);
   transition: all 0.3s;
   transition-timing-function: ease-out;
-  box-shadow: 11px 11px 8px 0px #9c9b9b;
+  box-shadow: 11px 11px 8px 0px #ffffff;
   margin-bottom: 20px;
-  border-radius: 20px;
+  filter: brightness(70%);
 }
 
 .cardBorder:hover{
   box-shadow: none;
+  filter: brightness(100%);
 }
 
 /* ***********************    DETALLE DEL PRODUCTO  ************************/
