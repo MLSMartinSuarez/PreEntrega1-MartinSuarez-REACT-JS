@@ -17,14 +17,14 @@ const Cart = () => {
                             <p>items <span>{allProductsQuantity()}</span></p>
                         </div>
                         <div className="emptycart">
-                            <p>NO SE ENCONTRARON PRODUCTOS EN TU CARRITO</p>
+                            <Link to={'/'}><p>NO SE ENCONTRARON PRODUCTOS EN TU CARRITO</p></Link>
                         </div>
-                        <div className="checkout BotonCart">
+                        <div className="checkout">
                             <p>Precio total : <span>${allProductsPrice()}</span></p>
                         </div>
                         <div className="volver">
-                            <Link to={'/'}> <button className="btnvolver BotonCart">volver al sitio</button> </Link>
-                            <button onClick={clearCart} className="btnvolver BotonCart">VACIAR CARRITO</button>
+                            <Link to={'/'}> <button className="btnvolver BotonCart">Volver al Sitio</button> </Link>
+                            <button onClick={clearCart} className="btnvolver BotonCart">Vaciar Carrito</button>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,8 @@
 }
 
 a{
-  display: inline
+  display: inline;
+  color: inherit;
 }
 
 
@@ -394,39 +395,43 @@ body{
 }
 
 .itemsTotal{
-  background-color: rgba(255, 255, 255, 0.363);
   border-radius: 20px;
   padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.134);
 }
 
 .productos{
   display: flex;
-  margin: 40px;
   box-shadow: 0px 2px 0px 0px rgba(172, 167, 167, 0.335);
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .imagen{
   width: 120px;
-  margin-right: 50px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin-right: 10px;
 }
 
 .producto{
-  margin-right: 50px;
+  padding: 20px;
 }
 
 .precio{
-  margin-right: 50px;
+  padding: 20px;
 }
 
 .cantidad{
-  margin-right: 50px;
+ padding: 20px;
 }
+
 .remover{
-  margin-right: 50px;
   border: 1px solid black;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
 }
 
@@ -461,6 +466,9 @@ body{
   padding: 20px;
   border: 1px solid black;
   cursor: pointer;
+  border-radius: 20px;
+  background-color: #00000054;
+  color: white;
 }
 
 .totalProductos{

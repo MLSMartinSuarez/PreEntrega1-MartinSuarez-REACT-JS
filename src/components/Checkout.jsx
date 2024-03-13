@@ -70,7 +70,7 @@ const Checkout = () => {
                             <div className="productos" key={product.id}>
                                 <img className="imagen" src={product.image} alt={product.name} />
                                 <h3 className="producto">{product.product}</h3>
-                                <h4 className="precio">{product.price}</h4>
+                                <h4 className="precio">$ {product.price}</h4>
                                 <p className="cantidad"><span>{product.quantity}</span></p>
                             </div>)}
                     </div>
