@@ -3,7 +3,7 @@ const Productos = () => {
 return (
 
     <div>
-        <h1 className='titulo'>Productos : TODOS </h1>
+        <h2 className='titulo'>Productos : TODOS </h2>
     </div>
 
 )

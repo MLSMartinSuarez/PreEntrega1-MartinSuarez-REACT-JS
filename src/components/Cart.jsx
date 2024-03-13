@@ -20,7 +20,7 @@ const Cart = () => {
                             <Link to={'/'}><p>NO SE ENCONTRARON PRODUCTOS EN TU CARRITO</p></Link>
                         </div>
                         <div className="checkout">
-                            <p>Precio total : <span>${allProductsPrice()}</span></p>
+                            <p>Precio total : <span>$ {allProductsPrice()}</span></p>
                         </div>
                         <div className="volver">
                             <Link to={'/'}> <button className="btnvolver BotonCart">Volver al Sitio</button> </Link>
@@ -46,12 +46,12 @@ const Cart = () => {
                                 <img className="imagen" src={product.image} alt={product.name} />
                                 <h3 className="producto">{product.product}</h3>
                                 <h4 className="precio">$ {product.price}</h4>
-                                <p className="cantidad"><span>{product.quantity}</span></p>
+                                <p className="cantidad"><span><b>{product.quantity}</b></span></p>
                                 <p className="remover" onClick={() => { removeItem(product.id) }}>X</p>
                             </div>)}
                     </div>
                     <div className="checkout">
-                        <p>Precio total : <span><b>${allProductsPrice()}</b></span></p>
+                        <p>Precio total : <span><b>$ {allProductsPrice()}</b></span></p>
                         <Link to={"/checkout"}> <button className="btncheckout BotonCart" >Checkout</button></Link>
                     </div>
                     <div className="volver">
