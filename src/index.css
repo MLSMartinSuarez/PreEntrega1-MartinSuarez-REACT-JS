@@ -203,17 +203,16 @@ body{
 
 .productTxt{
   color:rgb(255, 255, 255);
-  font-size: larger;
+  font-size: large;
 }
 
 .productPrice{
   color: rgb(0, 0, 0);
   border: 1px solid black;
-  border-radius: 20px;
   background-color: white;
   position: relative;
-  top: -52px;
-  left: 209px;
+  top: -80px;
+  left: 170px;
   padding: 5px;
   display: inline
 }
@@ -226,8 +225,8 @@ body{
 }
 
 .productImg{
-  width: 230px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border-radius: 200px;
   padding: 10px;
@@ -246,7 +245,6 @@ body{
 
 .botonCard{
   padding: 10px;
-  /* margin-right: 10px; */
   border-radius: 20px;
   transition: all 0.2s;
   transition-timing-function: ease-out;
@@ -263,7 +261,7 @@ body{
 .cardBorder{
   transition: all 0.3s;
   transition-timing-function: ease-out;
-  box-shadow: 11px 11px 8px 0px #ffffff;
+  box-shadow: 0px 0px 20px 5px #ffffff;
   margin-bottom: 20px;
   filter: brightness(70%);
 }
